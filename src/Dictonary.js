@@ -1,17 +1,22 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./Dictonary.css"
+import Word from "./Word";
 
 
 
 export default function Dictonary(){
-let [value, setValue]= useState('hello')
-let [word, setWord] = useState('')
-
+let [value, setValue]= useState('')
+let [data, setData] = useState('');
+let [word, setWord]=useState('')
 
 function dictCall(response){
-    console.log(response.data)
+    console.log(response.data[0])
+    
+    
     setWord(response.data[0].word)
+    setData(response.data[0])
+//meanings[0].definitions[0].definition
 }
 
 
@@ -31,7 +36,6 @@ let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${value}`
     <form onSubmit={seacrhing}>
          <input type="search" autoFocus={true} onChange={currentValue}/>
     </form>
-    <div><h1>{word}</h1></div>
-    
+    <Word words={word} fullData={data}/>
     </div>
 }
