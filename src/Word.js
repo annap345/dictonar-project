@@ -7,11 +7,12 @@ export default function Word(props){
         return (
     <div>
         <h1>{props.words}</h1> 
-        <p>{props.fullData.meanings.map(function (meaning, index){
+        <p>{props.fullData.phonetic}</p>
+        <span>{props.fullData.meanings.map(function (meaning, index){
             return( <div key={index}> 
             <Meaning meaning={meaning}/>
             </div>)
-        })}</p>
+        })}</span>
     </div>
     )
     }
