@@ -36,6 +36,6 @@ let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${value}`
     <form onSubmit={seacrhing}>
          <input type="search" autoFocus={true} onChange={currentValue}/>
     </form>
-    <Word words={word} fullData={data}/>
+    <Word className="words" words={word} fullData={data}/>
     </div>
 }
