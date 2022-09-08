@@ -1,6 +1,7 @@
 .everything {
     display: flex;
     justify-content:  space-evenly;
+    
 }
 
 .body {
@@ -13,6 +14,7 @@
     padding-bottom: 50px;
     margin-bottom: 100px;
     margin: 10px;
+    box-shadow:5px 5px 24px -3px #748DA6;
 }
 
 h1, p {
