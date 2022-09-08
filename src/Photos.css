@@ -1,0 +1,24 @@
+.all {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+   height: auto;
+display: block;
+margin: 0 auto;
+border-radius: 40px;
+border-color: #748DA6;
+border-style: solid;
+}
+
+.photoBody {
+    background-color: #F2D7D9;
+    padding: 30px;
+    width: 65%;
+    border-radius: 40px;
+    box-shadow:5px 5px 24px -3px #748DA6;
+}
