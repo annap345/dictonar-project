@@ -34,7 +34,8 @@ let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${value}`
 
     return <div className="Body">
     <form onSubmit={seacrhing}>
-         <input type="search" autoFocus={true} onChange={currentValue}/>
+         <input type="search" autoFocus={true} onChange={currentValue} className="searching"/>
+         <input type="submit" value="submit" className="button" onSubmit={seacrhing}/>
     </form>
     <Word className="words" words={word} fullData={data}/>
     </div>
